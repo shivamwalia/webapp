@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- commments  -->
+	<title>mypage
+	</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+	<div class="container">
+<header>
+<nav>
+<ul>
+<li><a href="/index.html"> index</a></li>
+<li><a href="/courses.html">courses</a></li>
+<li><a href="/about.html">about</a></li>
+<li><a href="/contact.html">contact</a></li>
+</ul>
+
+
+</nav>
+
+	<img  src="/images/mysirg.png"  width="300" height="150" />
+</header>
+	<section id="main"><p>
+<h1>  welcome to MYSIRG </h1></p>
+<div class="login-form bordered">
+<form action="/api/login" method="post" id="loginForm">
+	<h2> LOGIN PAGE</h2>
+<label for="username">USERNAME</label>
+<input type="text" name="username" id="username" /><br />
+<label for="password">PASSWORD</label>
+<input type="password" name="password" id="password" /><br />
+<input type="checkbox" name="remember" id="remember" />
+<label for="remember">REMEMBER ME</label><br />
+<div id="errorMsg"></div>
+<input type="submit" name="loginbutton" value="LOGIN" />
+<input type="reset" name="cancelbutton" value="CLEAR" />
+
+</form>
+<div id="logoutSection">
+	<p> You are logged in</p>
+	<button id="logoutButton">Logout</button>
+</div>
+
+</div>
+
+<div id="results">
+	<h4> COURSES</h4>
+<button id="toggleButton">Hide</button>
+<div id="resultList">
+all courses are here	
+</div>
+</div>
+</section>
+<br />
+<br />
+<br />
+<br />
+<footer>
+<div>
+	&copy; 2017 MYSIRG
+</div>
+</footer>
+</div>
+
+
+</body>
+</html>
